@@ -21,8 +21,8 @@ public class CProfessionnel extends Client {
 		this.activitePrincipale = activitePrincipale;
 	}
 	     
-	    public CProfessionnel(String nom, String adresse, int nSIRET, String activitePrincipale) {
-	        super(nom, adresse);
+	    public CProfessionnel(String nom, String adresse, String ville, int cp, int nSIRET, String activitePrincipale) {
+	        super(nom, adresse, ville, cp);
 	        this.nSIRET = nSIRET;
 	        this.activitePrincipale = activitePrincipale ;
 	    }

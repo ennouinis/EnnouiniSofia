@@ -6,8 +6,8 @@ public class MonApplicationBancaireFonctionne {
 			
 			MonPortefeuille AgenceBancaire = new MonPortefeuille() ;
 		
-			Client client1 = new CParticulier("Dupont Emma", "3 rue des fleurs", 123456, "Avocate", "01.01.1982") ; 
-			Client client2 = new CProfessionnel("GeniusDev", "5 chemin des palmiers", 234567, "Développment Web"); 
+			Client client1 = new CParticulier("Dupont Emma", "3 rue des fleurs", "Annecy-le-vieux", 74940, 123456, "Avocate", "01.01.1982") ; 
+			Client client2 = new CProfessionnel("GeniusDev", "5 chemin des palmiers", "Annecy-le-vieux", 74940, 234567, "Développment Web"); 
 			
 			CompteBancaire cb1 = new CompteBancaire(client1, 1234, 1500, 1500, 2000) ; 
 			CompteBancaire cb2 = new CompteBancaire(client2, 2345, 15000, 1500, 2000) ;

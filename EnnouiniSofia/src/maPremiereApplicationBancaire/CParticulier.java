@@ -29,8 +29,8 @@ public class CParticulier extends Client {
 			this.dtNaissance = dtNaissance;
 		}
 		
-		    public CParticulier(String nom, String adresse, int nni, String profession, String dtNaissance) {
-		        super(nom, adresse);
+		    public CParticulier(String nom, String adresse, String ville, int cp, int nni, String profession, String dtNaissance) {
+		        super(nom, adresse, ville, cp);
 		        this.nni = nni;
 		        this.profession = profession ;
 		        this.setDtNaissance(dtNaissance) ; 
