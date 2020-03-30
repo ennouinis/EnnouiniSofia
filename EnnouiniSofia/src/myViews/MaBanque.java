@@ -19,16 +19,13 @@ import javax.swing.JTextField;
 public class MaBanque {
 
 	private JFrame frame;
-	private JTextField textField;
-	private JTextField textField_1;
-	private JTextField textField_2;
-	private JTextField textField_3;
-	private JTextField textField_4;
-	private JTextField textField_5;
+	private JTextField nom;
+	private JTextField adresse;
+	private JTextField codePostal;
+	private JTextField ville;
+	private JTextField nSIRET;
+	private JTextField activitePrincipale;
 
-	/**
-	 * Launch the application.
-	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -42,17 +39,12 @@ public class MaBanque {
 		});
 	}
 
-	/**
-	 * Create the application.
-	 */
+
 	public MaBanque() {
 		initialize();
 	}
 
-	/**
-	 * Initialize the contents of the frame.
-	 */
-	private void initialize() {
+		private void initialize() {
 		frame = new JFrame();
 		
 		  frame.setTitle("BANQUE ANNECIENNE");
@@ -77,20 +69,20 @@ public class MaBanque {
 		lblNomComplet.setBounds(41, 128, 102, 23);
 		frame.getContentPane().add(lblNomComplet);
 		
-		textField = new JTextField();
-		textField.setBounds(148, 129, 175, 20);
-		frame.getContentPane().add(textField);
-		textField.setColumns(10);
+		nom = new JTextField();
+		nom.setBounds(148, 129, 175, 20);
+		frame.getContentPane().add(nom);
+		nom.setColumns(10);
 		
 		JLabel lblAdresse = new JLabel("Adresse");
 		lblAdresse.setFont(new Font("Tahoma", Font.BOLD, 11));
 		lblAdresse.setBounds(41, 173, 102, 23);
 		frame.getContentPane().add(lblAdresse);
 		
-		textField_1 = new JTextField();
-		textField_1.setColumns(10);
-		textField_1.setBounds(148, 174, 287, 20);
-		frame.getContentPane().add(textField_1);
+		adresse = new JTextField();
+		adresse.setColumns(10);
+		adresse.setBounds(148, 174, 287, 20);
+		frame.getContentPane().add(adresse);
 		
 		JLabel lblCrerUnNouveau = new JLabel("Cr\u00E9er un nouveau client professionnel ");
 		lblCrerUnNouveau.setFont(new Font("Tahoma", Font.BOLD, 11));
@@ -102,44 +94,54 @@ public class MaBanque {
 		lblCodePostal.setBounds(41, 222, 102, 23);
 		frame.getContentPane().add(lblCodePostal);
 		
-		textField_2 = new JTextField();
-		textField_2.setColumns(10);
-		textField_2.setBounds(148, 223, 175, 20);
-		frame.getContentPane().add(textField_2);
+		codePostal = new JTextField();
+		codePostal.setColumns(10);
+		codePostal.setBounds(148, 223, 175, 20);
+		frame.getContentPane().add(codePostal);
 		
 		JLabel lblVille = new JLabel("Ville");
 		lblVille.setFont(new Font("Tahoma", Font.BOLD, 11));
 		lblVille.setBounds(41, 275, 102, 23);
 		frame.getContentPane().add(lblVille);
 		
-		textField_3 = new JTextField();
-		textField_3.setColumns(10);
-		textField_3.setBounds(148, 276, 175, 20);
-		frame.getContentPane().add(textField_3);
+		ville = new JTextField();
+		ville.setColumns(10);
+		ville.setBounds(148, 276, 175, 20);
+		frame.getContentPane().add(ville);
 		
 		JLabel lblNumroDeSiret = new JLabel("Num\u00E9ro SIRET");
 		lblNumroDeSiret.setFont(new Font("Tahoma", Font.BOLD, 11));
 		lblNumroDeSiret.setBounds(41, 326, 102, 23);
 		frame.getContentPane().add(lblNumroDeSiret);
 		
-		textField_4 = new JTextField();
-		textField_4.setColumns(10);
-		textField_4.setBounds(148, 327, 175, 20);
-		frame.getContentPane().add(textField_4);
+		nSIRET = new JTextField();
+		nSIRET.setColumns(10);
+		nSIRET.setBounds(148, 327, 175, 20);
+		frame.getContentPane().add(nSIRET);
 		
-		JLabel lblActivitPrincipale = new JLabel("Activit\u00E9 principale");
+		JLabel lblActivitPrincipale = new JLabel("Activité principale");
 		lblActivitPrincipale.setFont(new Font("Tahoma", Font.BOLD, 11));
 		lblActivitPrincipale.setBounds(41, 373, 102, 23);
 		frame.getContentPane().add(lblActivitPrincipale);
 		
-		textField_5 = new JTextField();
-		textField_5.setColumns(10);
-		textField_5.setBounds(148, 374, 175, 20);
-		frame.getContentPane().add(textField_5);
+		activitePrincipale = new JTextField();
+		activitePrincipale.setColumns(10);
+		activitePrincipale.setBounds(148, 374, 175, 20);
+		frame.getContentPane().add(activitePrincipale);
 		
-		JButton btnCrer = new JButton("Cr\u00E9er");
+		JButton btnCrer = new JButton("Valider");
 		btnCrer.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				try {
+					CProfessionnel cpro = new CProfessionnel (nom.getText(),adresse.getText(),
+					       ville.getText(), Integer.parseInt(codePostal.getText()), Integer.parseInt(nSIRET.getText()), activitePrincipale.getText());
+				} catch (NumberFormatException e1) {
+					
+					e1.printStackTrace();
+				} catch (IOException e1) {
+					
+					e1.printStackTrace();
+				} 
 			}
 		});
 		btnCrer.setForeground(new Color(0, 102, 255));
