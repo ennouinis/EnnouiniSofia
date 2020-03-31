@@ -8,7 +8,7 @@ import maPremiereApplicationBancaire.CProfessionnel;
 
 import javax.swing.JButton;
 import java.awt.Font;
-import java.awt.SystemColor;
+//import java.awt.SystemColor;
 import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.awt.event.ActionEvent;
@@ -153,7 +153,14 @@ public class MaBanque {
 		btnRinitialiser.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				frame.removeAll();
+				//frame.removeAll();
+				nom.setText("");
+				adresse.setText("");
+				codePostal.setText("");
+				ville.setText("");
+				nSIRET.setText("");
+				activitePrincipale.setText("");
+				
 				
 			}
 		});
