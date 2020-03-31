@@ -35,7 +35,8 @@ public class MonApplicationBancaireFonctionne {
 			
 			AgenceBancaire.afficherPortfeuille();
 			
-			MaBanque Mabanque = new MaBanque(); 
+			new MaBanque(); 
+
 		}
 
 }

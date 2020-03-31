@@ -49,11 +49,10 @@ public class MaBanque {
 		
 		  frame.setTitle("BANQUE ANNECIENNE");
 
-		  frame.setSize(700, 700);
+		  frame.setSize(1000, 700);
 		  frame.setLocationRelativeTo(null);
 
 		
-		  //frame.setBounds(100, 100, 450, 300);
 		  frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		  frame.getContentPane().setLayout(null);
 		  frame.setVisible(true);
@@ -84,7 +83,7 @@ public class MaBanque {
 		adresse.setBounds(148, 174, 287, 20);
 		frame.getContentPane().add(adresse);
 		
-		JLabel lblCrerUnNouveau = new JLabel("Cr\u00E9er un nouveau client professionnel ");
+		JLabel lblCrerUnNouveau = new JLabel("Créer un nouveau client professionnel ");
 		lblCrerUnNouveau.setFont(new Font("Tahoma", Font.BOLD, 11));
 		lblCrerUnNouveau.setBounds(221, 72, 227, 36);
 		frame.getContentPane().add(lblCrerUnNouveau);
@@ -153,7 +152,6 @@ public class MaBanque {
 		btnRinitialiser.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				//frame.removeAll();
 				nom.setText("");
 				adresse.setText("");
 				codePostal.setText("");
