@@ -35,7 +35,6 @@ public class CompteBancaire {
 	
 	}
 	
-	
 	public CompteBancaire () { 
 		
 	}
@@ -80,16 +79,16 @@ public class CompteBancaire {
 		this.retraitMaximum = retraitMaximum;
 	}
 
-	public void verserArgent (double montant) { 
-	soldeBancaire = soldeBancaire + montant ; 
+	public void verserArgent (double montantVersement) { 
+	soldeBancaire = soldeBancaire + montantVersement; 
 	}
 	
-    public void retirerArgent (int montant){
-        soldeBancaire = soldeBancaire - montant; { 
-            if(montant >= 0 
-            		&& montant <= retraitMaximum
+    public void retirerArgent (double montantRetrait){
+        soldeBancaire = soldeBancaire - montantRetrait; { 
+            if(montantRetrait > 0 
+            		&& montantRetrait <= retraitMaximum
             		&& soldeBancaire >= -plafondDecouvert ) {
-            	System.out.println("Votre solde restant est de :  " + soldeBancaire + "euros.");
+            	System.out.println("Votre solde restant est de :  " + soldeBancaire + " euros.");
     }
            else { 
         	   System.out.println("Votre demande ne peut être traitée."); }
