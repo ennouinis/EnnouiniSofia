@@ -49,11 +49,8 @@ public class AjouterClientParticulier {
 		frame = new JFrame();
 		
 		  frame.setTitle("BANQUE ANNECIENNE");
-
 		  frame.setSize(1000, 700);
 		  frame.setLocationRelativeTo(null);
-
-		
 		  frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		  frame.getContentPane().setLayout(null);
 		  frame.setVisible(true);
@@ -95,8 +92,8 @@ public class AjouterClientParticulier {
 		frame.getContentPane().add(adresse);
 		
 		JLabel lblCrerUnNouveau = new JLabel("Créer un nouveau client particulier ");
-		lblCrerUnNouveau.setFont(new Font("Tahoma", Font.BOLD, 11));
-		lblCrerUnNouveau.setBounds(221, 72, 227, 36);
+		lblCrerUnNouveau.setFont(new Font("Tahoma", Font.BOLD, 13));
+		lblCrerUnNouveau.setBounds(221, 72, 254, 36);
 		frame.getContentPane().add(lblCrerUnNouveau);
 		
 		JLabel lblCodePostal = new JLabel("Code postal");
