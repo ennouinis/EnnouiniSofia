@@ -62,6 +62,7 @@ public class CParticulier extends Client {
 		    	jsonob.put("Code postal", cp);
 		    	jsonob.put("NNI", nni);
 		    	jsonob.put("Profession", profession);
+		    	jsonob.put("Age", age);
 		    	
 		    	FileWriter file = new FileWriter ("FicheClient"+nni+".json"); 
 		    	file.write(jsonob.toString());

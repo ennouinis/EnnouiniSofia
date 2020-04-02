@@ -144,7 +144,7 @@ public class AjouterClientParticulier {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					CParticulier cpart = new CParticulier (nom.getText(),adresse.getText(),
-					       ville.getText(), Integer.parseInt(codePostal.getText()), Integer.parseInt(nni.getText()), profession.getText(), 0);
+					       ville.getText(), Integer.parseInt(codePostal.getText()), Integer.parseInt(nni.getText()), profession.getText(), Integer.parseInt(age.getText()));
 				} catch (NumberFormatException e1) {
 					
 					e1.printStackTrace();
