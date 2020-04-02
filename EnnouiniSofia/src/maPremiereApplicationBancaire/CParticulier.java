@@ -34,7 +34,7 @@ public class CParticulier extends Client {
 		public void setAge(int age) {
 			try {
 				ageLegal(age);
-			} catch (ErreursSaisies e) {
+			} catch (GestionExceptions e) {
 				e.printStackTrace();
 			}
 			if (age>=18) {
@@ -49,7 +49,7 @@ public class CParticulier extends Client {
 		        this.age = age ; 
 		        try {
 		        	ageLegal(age);
-				} catch (ErreursSaisies e) {
+				} catch (GestionExceptions e) {
 					e.printStackTrace();
 				} 
 		        
@@ -73,9 +73,9 @@ public class CParticulier extends Client {
 		    }
 		    
 		    //Exception en cas d'ajout d'un nouveau client n'ayant pas l'âge minimum requis fixé à 18 ans : 
-		    public static void ageLegal (int age) throws ErreursSaisies { 
+		    public static void ageLegal (int age) throws GestionExceptions { 
 		    	if (age<18) {
-		    		throw new ErreursSaisies ("Ce client n'a pas l'âge légal pour ouvrir un compte bancaire.");
+		    		throw new GestionExceptions ("Ce client n'a pas l'âge légal pour ouvrir un compte bancaire.");
 		    	}
 		    }
 		 
