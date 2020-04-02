@@ -1,6 +1,6 @@
 package maPremiereApplicationBancaire;
 
-import myViews.MaBanque;
+import myViews.AjouterClientProfessionnel;
 
 public class MonApplicationBancaireFonctionne {
 
@@ -35,7 +35,7 @@ public class MonApplicationBancaireFonctionne {
 			
 			AgenceBancaire.afficherPortfeuille();
 			
-			new MaBanque(); 
+			new AjouterClientProfessionnel(); 
 
 		}
 

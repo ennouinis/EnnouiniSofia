@@ -4,7 +4,7 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 
-import maPremiereApplicationBancaire.CProfessionnel;
+import maPremiereApplicationBancaire.CParticulier;
 
 import javax.swing.JButton;
 import java.awt.Font;
@@ -16,21 +16,22 @@ import javax.swing.JLabel;
 import java.awt.Color;
 import javax.swing.JTextField;
 
-public class MaBanque {
+public class AjouterClientParticulier {
 
 	private JFrame frame;
 	private JTextField nom;
+	private JTextField age;
 	private JTextField adresse;
 	private JTextField codePostal;
 	private JTextField ville;
-	private JTextField nSIRET;
-	private JTextField activitePrincipale;
+	private JTextField nni;
+	private JTextField profession;
 
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					MaBanque window = new MaBanque();
+					AjouterClientParticulier window = new AjouterClientParticulier();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -40,7 +41,7 @@ public class MaBanque {
 	}
 
 
-	public MaBanque() {
+	public AjouterClientParticulier() {
 		initialize();
 	}
 
@@ -65,75 +66,85 @@ public class MaBanque {
 		
 		JLabel lblNomComplet = new JLabel("Nom complet");
 		lblNomComplet.setFont(new Font("Tahoma", Font.BOLD, 11));
-		lblNomComplet.setBounds(41, 128, 102, 23);
+		lblNomComplet.setBounds(50, 130, 102, 23);
 		frame.getContentPane().add(lblNomComplet);
 		
 		nom = new JTextField();
-		nom.setBounds(148, 129, 175, 20);
+		nom.setBounds(221, 131, 175, 20);
 		frame.getContentPane().add(nom);
 		nom.setColumns(10);
 		
+		JLabel lblAge = new JLabel("Âge");
+		lblAge.setFont(new Font("Tahoma", Font.BOLD, 11));
+		lblAge.setBounds(50, 170, 102, 23);
+		frame.getContentPane().add(lblAge);
+		
+		age = new JTextField();
+		age.setBounds(221, 171, 175, 20);
+		frame.getContentPane().add(age);
+		age.setColumns(10);
+		
 		JLabel lblAdresse = new JLabel("Adresse");
 		lblAdresse.setFont(new Font("Tahoma", Font.BOLD, 11));
-		lblAdresse.setBounds(41, 173, 102, 23);
+		lblAdresse.setBounds(50, 210, 102, 23);
 		frame.getContentPane().add(lblAdresse);
 		
 		adresse = new JTextField();
 		adresse.setColumns(10);
-		adresse.setBounds(148, 174, 287, 20);
+		adresse.setBounds(221, 211, 287, 20);
 		frame.getContentPane().add(adresse);
 		
-		JLabel lblCrerUnNouveau = new JLabel("Créer un nouveau client professionnel ");
+		JLabel lblCrerUnNouveau = new JLabel("Créer un nouveau client particulier ");
 		lblCrerUnNouveau.setFont(new Font("Tahoma", Font.BOLD, 11));
 		lblCrerUnNouveau.setBounds(221, 72, 227, 36);
 		frame.getContentPane().add(lblCrerUnNouveau);
 		
 		JLabel lblCodePostal = new JLabel("Code postal");
 		lblCodePostal.setFont(new Font("Tahoma", Font.BOLD, 11));
-		lblCodePostal.setBounds(41, 222, 102, 23);
+		lblCodePostal.setBounds(50, 290, 102, 23);
 		frame.getContentPane().add(lblCodePostal);
 		
 		codePostal = new JTextField();
 		codePostal.setColumns(10);
-		codePostal.setBounds(148, 223, 175, 20);
+		codePostal.setBounds(221, 291, 175, 20);
 		frame.getContentPane().add(codePostal);
 		
 		JLabel lblVille = new JLabel("Ville");
 		lblVille.setFont(new Font("Tahoma", Font.BOLD, 11));
-		lblVille.setBounds(41, 275, 102, 23);
+		lblVille.setBounds(50, 330, 102, 23);
 		frame.getContentPane().add(lblVille);
 		
 		ville = new JTextField();
 		ville.setColumns(10);
-		ville.setBounds(148, 276, 175, 20);
+		ville.setBounds(221, 331, 175, 20);
 		frame.getContentPane().add(ville);
 		
-		JLabel lblNumroDeSiret = new JLabel("Num\u00E9ro SIRET");
-		lblNumroDeSiret.setFont(new Font("Tahoma", Font.BOLD, 11));
-		lblNumroDeSiret.setBounds(41, 326, 102, 23);
-		frame.getContentPane().add(lblNumroDeSiret);
+		JLabel lblNni = new JLabel("NNI");
+		lblNni.setFont(new Font("Tahoma", Font.BOLD, 11));
+		lblNni.setBounds(50, 250, 102, 23);
+		frame.getContentPane().add(lblNni);
 		
-		nSIRET = new JTextField();
-		nSIRET.setColumns(10);
-		nSIRET.setBounds(148, 327, 175, 20);
-		frame.getContentPane().add(nSIRET);
+		nni = new JTextField();
+		nni.setColumns(10);
+		nni.setBounds(221, 251, 175, 20);
+		frame.getContentPane().add(nni);
 		
-		JLabel lblActivitPrincipale = new JLabel("Activité principale");
-		lblActivitPrincipale.setFont(new Font("Tahoma", Font.BOLD, 11));
-		lblActivitPrincipale.setBounds(41, 373, 102, 23);
-		frame.getContentPane().add(lblActivitPrincipale);
+		JLabel lblProfession = new JLabel("Profession");
+		lblProfession.setFont(new Font("Tahoma", Font.BOLD, 11));
+		lblProfession.setBounds(50, 370, 102, 23);
+		frame.getContentPane().add(lblProfession);
 		
-		activitePrincipale = new JTextField();
-		activitePrincipale.setColumns(10);
-		activitePrincipale.setBounds(148, 374, 175, 20);
-		frame.getContentPane().add(activitePrincipale);
+		profession = new JTextField();
+		profession.setColumns(10);
+		profession.setBounds(221, 377, 175, 20);
+		frame.getContentPane().add(profession);
 		
 		JButton btnCrer = new JButton("Valider");
 		btnCrer.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
-					CProfessionnel cpro = new CProfessionnel (nom.getText(),adresse.getText(),
-					       ville.getText(), Integer.parseInt(codePostal.getText()), Integer.parseInt(nSIRET.getText()), activitePrincipale.getText());
+					CParticulier cpart = new CParticulier (nom.getText(),adresse.getText(),
+					       ville.getText(), Integer.parseInt(codePostal.getText()), Integer.parseInt(nni.getText()), profession.getText(), 0);
 				} catch (NumberFormatException e1) {
 					
 					e1.printStackTrace();
@@ -145,7 +156,7 @@ public class MaBanque {
 		});
 		btnCrer.setForeground(new Color(0, 102, 255));
 		btnCrer.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 15));
-		btnCrer.setBounds(161, 448, 144, 36);
+		btnCrer.setBounds(160, 486, 144, 36);
 		frame.getContentPane().add(btnCrer);
 		
 		JButton btnRinitialiser = new JButton("Réinitialiser");
@@ -156,15 +167,16 @@ public class MaBanque {
 				adresse.setText("");
 				codePostal.setText("");
 				ville.setText("");
-				nSIRET.setText("");
-				activitePrincipale.setText("");
+				nni.setText("");
+				profession.setText("");
+				age.setText("");
 				
 				
 			}
 		});
 		btnRinitialiser.setForeground(new Color(0, 102, 255));
 		btnRinitialiser.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 15));
-		btnRinitialiser.setBounds(366, 448, 132, 36);
+		btnRinitialiser.setBounds(362, 486, 132, 36);
 		frame.getContentPane().add(btnRinitialiser);
 	}
 }
