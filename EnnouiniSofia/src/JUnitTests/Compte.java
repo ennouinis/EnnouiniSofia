@@ -8,7 +8,7 @@ public class Compte {
 	private double soldeBancaire, plafondDecouvert, retraitMaximum ; 
 	private boolean crediteur; 
 	
-	public void CompteBancaire (Client t, int numeroIBAN, double soldeBancaire, double plafondDecouvert, double retraitMaximum) { 
+	public Compte (Client t, int numeroIBAN, double soldeBancaire, double plafondDecouvert, double retraitMaximum) { 
 		this.titulaireCompte = t ;
 		this.numeroIBAN = numeroIBAN ;
 		this.soldeBancaire = soldeBancaire ; 

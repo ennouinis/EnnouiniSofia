@@ -7,7 +7,7 @@ public class CompteTest {
  @Test 
  public void test1() {
 
- Compte compte = new Compte(); 
+ Compte compte = new Compte(null, 0, 0, 0, 0); 
  compte.verserArgent(300.0);
 
  compte.reinit();
@@ -18,7 +18,7 @@ public class CompteTest {
  
  @Test 
  public void test4() {
- Compte compte = new Compte(); 
+ Compte compte = new Compte(null, 0, 0, 0, 0); 
  compte.verserArgent(300.0);
  compte.retirerArgent(50);
  compte.reinit();
