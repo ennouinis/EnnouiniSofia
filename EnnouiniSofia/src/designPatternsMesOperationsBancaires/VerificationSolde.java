@@ -1,4 +1,4 @@
-package mesOperationsBancaires;
+package designPatternsMesOperationsBancaires;
 
 public class VerificationSolde {
 

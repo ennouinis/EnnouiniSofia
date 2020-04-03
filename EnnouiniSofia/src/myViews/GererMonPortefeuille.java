@@ -33,16 +33,11 @@ public class GererMonPortefeuille {
 		});
 	}
 
-	/**
-	 * Create the application.
-	 */
 	public GererMonPortefeuille() {
 		initialize();
 	}
 
-	/**
-	 * Initialize the contents of the frame.
-	 */
+
 	private void initialize() {
 		frame = new JFrame();
 		
@@ -68,7 +63,7 @@ public class GererMonPortefeuille {
 			});
 			btnAjouterClientParticulier.setFont(new Font("Tahoma", Font.BOLD, 13));
 			btnAjouterClientParticulier.setForeground(SystemColor.textHighlight);
-			btnAjouterClientParticulier.setBounds(223, 138, 230, 36);
+			btnAjouterClientParticulier.setBounds(223, 150, 230, 36);
 			frame.getContentPane().add(btnAjouterClientParticulier);
 			
 			JButton btnAjouterClientProfessionnel = new JButton("Ajouter client professionnel");
@@ -79,7 +74,7 @@ public class GererMonPortefeuille {
 			});
 			btnAjouterClientProfessionnel.setForeground(SystemColor.textHighlight);
 			btnAjouterClientProfessionnel.setFont(new Font("Tahoma", Font.BOLD, 13));
-			btnAjouterClientProfessionnel.setBounds(223, 209, 230, 36);
+			btnAjouterClientProfessionnel.setBounds(223, 200, 230, 36);
 			frame.getContentPane().add(btnAjouterClientProfessionnel);
 			
 			JLabel lblGestionDeProtefeuille = new JLabel("Gestion de portefeuille clients");
@@ -87,6 +82,19 @@ public class GererMonPortefeuille {
 			lblGestionDeProtefeuille.setFont(new Font("Tahoma", Font.BOLD, 13));
 			lblGestionDeProtefeuille.setBounds(233, 82, 213, 14);
 			frame.getContentPane().add(lblGestionDeProtefeuille);
+			
+			JButton btnAfficherMonPortefeuilleClients = new JButton("Afficher mon portefeuille clients");
+			btnAfficherMonPortefeuilleClients.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent e) {
+					
+					//afficherMonPortefeuille(); 
+					
+				}
+			});
+			btnAfficherMonPortefeuilleClients.setForeground(SystemColor.textHighlight);
+			btnAfficherMonPortefeuilleClients.setFont(new Font("Tahoma", Font.BOLD, 13));
+			btnAfficherMonPortefeuilleClients.setBounds(211, 247, 258, 36);
+			frame.getContentPane().add(btnAfficherMonPortefeuilleClients);
 			
 	}
 }

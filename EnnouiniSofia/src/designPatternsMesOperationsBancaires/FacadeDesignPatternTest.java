@@ -1,4 +1,4 @@
-package mesOperationsBancaires;
+package designPatternsMesOperationsBancaires;
 
 public class FacadeDesignPatternTest {
 		    public static void main(String[] args){

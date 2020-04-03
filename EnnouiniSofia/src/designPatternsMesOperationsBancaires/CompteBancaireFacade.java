@@ -1,4 +1,4 @@
-package mesOperationsBancaires;
+package designPatternsMesOperationsBancaires;
 
 public class CompteBancaireFacade {
 
@@ -6,9 +6,7 @@ public class CompteBancaireFacade {
 	    private int codeSecurite;
 
 	    VerificationIBAN verifIBAN;
-	
 	    VerificationCode verifCode;
-
 	    VerificationSolde verifSolde;
 
 	    BanqueAnnecienne banqueAnnecienne;
