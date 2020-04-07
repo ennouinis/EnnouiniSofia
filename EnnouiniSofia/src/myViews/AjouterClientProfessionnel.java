@@ -1,11 +1,10 @@
 package myViews;
 
-import java.awt.EventQueue;
-
-import javax.swing.JFrame;
 
 import maPremiereApplicationBancaire.CProfessionnel;
 
+import java.awt.EventQueue;
+import javax.swing.JFrame;
 import javax.swing.JButton;
 import java.awt.Font;
 import java.awt.event.ActionListener;

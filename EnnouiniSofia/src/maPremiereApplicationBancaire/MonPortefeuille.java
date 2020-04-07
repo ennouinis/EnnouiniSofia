@@ -3,15 +3,12 @@ import java.util.ArrayList;
 
 public class MonPortefeuille {
 
-	
-	//Créé un objet statique :
 	static MonPortefeuille agence1 = new MonPortefeuille(); 
-	
-	//Constructeur privé vide : 
+	 
 	private MonPortefeuille() { 
 		
 	}
-	//Méthode : 
+
 	public static MonPortefeuille getInstance () { 
 		return agence1 ;
 	}

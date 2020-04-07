@@ -3,11 +3,10 @@ package myViews;
 import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.Font;
-//import maPremiereApplicationBancaire.MonPortefeuille;
+
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-//import javax.swing.JPanel;
 import javax.swing.JButton;
 import java.awt.SystemColor;
 import javax.swing.SwingConstants;
@@ -85,7 +84,7 @@ public class GererMonPortefeuille {
 			btnAfficherMonPortefeuilleClients.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
 					
-					//new AfficherMonPortefeuille(); 
+					
 					
 				}
 			});

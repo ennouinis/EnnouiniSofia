@@ -19,8 +19,6 @@ public class CompteBancaire {
 		this.soldeBancaire = 0 ; 
 		this.plafondDecouvert = plafondDecouvert ; 
 		this.retraitMaximum = retraitMaximum ; 
-
-	//Pour créer et extraire des fichiers (attestationRIB) de format .json : 
 		
 	JSONObject jsonob = new JSONObject ();
 	jsonob.put("Compte numéro", numeroIBAN);

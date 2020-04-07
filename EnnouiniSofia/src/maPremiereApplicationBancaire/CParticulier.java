@@ -53,8 +53,6 @@ public class CParticulier extends Client {
 					e.printStackTrace();
 				} 
 		        
-		      //Pour créer et extraire des fichiers (fiche client) de format .json : 
-				
 		    	JSONObject jsonob = new JSONObject ();
 		    	jsonob.put("Nom complet", nom);
 		    	jsonob.put("Domicilié au", adresse);
@@ -71,8 +69,7 @@ public class CParticulier extends Client {
 		    	System.out.println (jsonob); 
 		        
 		    }
-		    
-		    //Exception en cas d'ajout d'un nouveau client n'ayant pas l'âge minimum requis fixé à 18 ans : 
+
 		    public static void ageLegal (int age) throws GestionExceptions { 
 		    	if (age<18) {
 		    		throw new GestionExceptions ("Ce client n'a pas l'âge légal pour ouvrir un compte bancaire.");

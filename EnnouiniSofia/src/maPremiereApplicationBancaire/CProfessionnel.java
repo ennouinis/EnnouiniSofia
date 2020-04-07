@@ -30,8 +30,6 @@ public class CProfessionnel extends Client {
 	        super(nom, adresse, ville, cp);
 	        this.nSIRET = nSIRET;
 	        this.activitePrincipale = activitePrincipale ;
-	        
-	      //Pour créer et extraire des fichiers (fiche client) de format .json : 
 			
 	    	JSONObject jsonob = new JSONObject ();
 	    	jsonob.put("Nom complet", nom);

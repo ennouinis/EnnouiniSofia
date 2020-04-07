@@ -3,7 +3,6 @@ package myViews;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
-import java.awt.BorderLayout;
 
 public class AfficherMonPortefeuilleClients {
 
@@ -25,16 +24,12 @@ public class AfficherMonPortefeuilleClients {
 		});
 	}
 
-	/**
-	 * Create the application.
-	 */
+
 	public AfficherMonPortefeuilleClients() {
 		initialize();
 	}
 
-	/**
-	 * Initialize the contents of the frame.
-	 */
+
 	private void initialize() {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 450, 300);

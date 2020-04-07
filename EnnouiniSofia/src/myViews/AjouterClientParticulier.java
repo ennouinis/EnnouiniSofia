@@ -1,21 +1,18 @@
 package myViews;
 
-import java.awt.EventQueue;
-
-import javax.swing.JFrame;
-
 import maPremiereApplicationBancaire.CParticulier;
 
+import java.awt.EventQueue;
+import javax.swing.JFrame;
 import javax.swing.JButton;
 import java.awt.Font;
-//import java.awt.SystemColor;
 import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.awt.event.ActionEvent;
 import javax.swing.JLabel;
 import java.awt.Color;
 import javax.swing.JTextField;
-//import java.awt.SystemColor;
+
 
 public class AjouterClientParticulier {
 
