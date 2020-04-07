@@ -8,7 +8,6 @@ import maPremiereApplicationBancaire.CProfessionnel;
 
 import javax.swing.JButton;
 import java.awt.Font;
-//import java.awt.SystemColor;
 import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.awt.event.ActionEvent;
@@ -80,7 +79,7 @@ public class AjouterClientProfessionnel {
 		
 		adresse = new JTextField();
 		adresse.setColumns(10);
-		adresse.setBounds(221, 174, 287, 20);
+		adresse.setBounds(221, 174, 175, 20);
 		frame.getContentPane().add(adresse);
 		
 		JLabel lblCrerUnNouveau = new JLabel("Créer un nouveau client professionnel ");
@@ -128,21 +127,19 @@ public class AjouterClientProfessionnel {
 		activitePrincipale.setBounds(221, 331, 175, 20);
 		frame.getContentPane().add(activitePrincipale);
 		
-		JButton btnCrer = new JButton("Valider");
+		JButton btnCrer = new JButton("Créer");
 		btnCrer.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					CProfessionnel cpro = new CProfessionnel (nom.getText(),adresse.getText(),
 					       ville.getText(), Integer.parseInt(codePostal.getText()), Integer.parseInt(nSIRET.getText()), activitePrincipale.getText());
-				} catch (NumberFormatException e1) {
-					
-					e1.printStackTrace();
 				} catch (IOException e1) {
 					
 					e1.printStackTrace();
 				} 
 			}
 		});
+		
 		btnCrer.setForeground(new Color(0, 102, 255));
 		btnCrer.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 15));
 		btnCrer.setBounds(137, 410, 144, 36);
@@ -158,7 +155,6 @@ public class AjouterClientProfessionnel {
 				ville.setText("");
 				nSIRET.setText("");
 				activitePrincipale.setText("");
-				
 				
 			}
 		});

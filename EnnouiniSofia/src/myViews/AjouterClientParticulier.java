@@ -15,7 +15,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.JLabel;
 import java.awt.Color;
 import javax.swing.JTextField;
-import java.awt.SystemColor;
+//import java.awt.SystemColor;
 
 public class AjouterClientParticulier {
 
@@ -89,7 +89,7 @@ public class AjouterClientParticulier {
 		
 		adresse = new JTextField();
 		adresse.setColumns(10);
-		adresse.setBounds(221, 211, 287, 20);
+		adresse.setBounds(221, 211, 175, 20);
 		frame.getContentPane().add(adresse);
 		
 		JLabel lblCrerUnNouveau = new JLabel("Créer un nouveau client particulier ");
@@ -137,8 +137,8 @@ public class AjouterClientParticulier {
 		profession.setBounds(221, 377, 175, 20);
 		frame.getContentPane().add(profession);
 		
-		JButton btnCrer = new JButton("Valider");
-		btnCrer.addActionListener(new ActionListener() {
+		JButton btnCreer = new JButton("Créer");
+		btnCreer.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					CParticulier cpart = new CParticulier (nom.getText(),adresse.getText(),
@@ -152,10 +152,10 @@ public class AjouterClientParticulier {
 				} 
 			}
 		});
-		btnCrer.setForeground(new Color(0, 102, 255));
-		btnCrer.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 15));
-		btnCrer.setBounds(160, 486, 144, 36);
-		frame.getContentPane().add(btnCrer);
+		btnCreer.setForeground(new Color(0, 102, 255));
+		btnCreer.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 15));
+		btnCreer.setBounds(160, 486, 144, 36);
+		frame.getContentPane().add(btnCreer);
 		
 		JButton btnRinitialiser = new JButton("Réinitialiser");
 		btnRinitialiser.addActionListener(new ActionListener() {

@@ -3,10 +3,11 @@ package myViews;
 import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.Font;
+//import maPremiereApplicationBancaire.MonPortefeuille;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JPanel;
+//import javax.swing.JPanel;
 import javax.swing.JButton;
 import java.awt.SystemColor;
 import javax.swing.SwingConstants;
@@ -17,9 +18,6 @@ public class GererMonPortefeuille {
 
 	private JFrame frame;
 
-	/**
-	 * Launch the application.
-	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -63,7 +61,7 @@ public class GererMonPortefeuille {
 			});
 			btnAjouterClientParticulier.setFont(new Font("Tahoma", Font.BOLD, 13));
 			btnAjouterClientParticulier.setForeground(SystemColor.textHighlight);
-			btnAjouterClientParticulier.setBounds(223, 150, 230, 36);
+			btnAjouterClientParticulier.setBounds(220, 150, 230, 36);
 			frame.getContentPane().add(btnAjouterClientParticulier);
 			
 			JButton btnAjouterClientProfessionnel = new JButton("Ajouter client professionnel");
@@ -74,7 +72,7 @@ public class GererMonPortefeuille {
 			});
 			btnAjouterClientProfessionnel.setForeground(SystemColor.textHighlight);
 			btnAjouterClientProfessionnel.setFont(new Font("Tahoma", Font.BOLD, 13));
-			btnAjouterClientProfessionnel.setBounds(223, 200, 230, 36);
+			btnAjouterClientProfessionnel.setBounds(220, 200, 230, 36);
 			frame.getContentPane().add(btnAjouterClientProfessionnel);
 			
 			JLabel lblGestionDeProtefeuille = new JLabel("Gestion de portefeuille clients");
@@ -87,13 +85,13 @@ public class GererMonPortefeuille {
 			btnAfficherMonPortefeuilleClients.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
 					
-					//afficherMonPortefeuille(); 
+					//new AfficherMonPortefeuille(); 
 					
 				}
 			});
 			btnAfficherMonPortefeuilleClients.setForeground(SystemColor.textHighlight);
 			btnAfficherMonPortefeuilleClients.setFont(new Font("Tahoma", Font.BOLD, 13));
-			btnAfficherMonPortefeuilleClients.setBounds(211, 247, 258, 36);
+			btnAfficherMonPortefeuilleClients.setBounds(210, 250, 258, 36);
 			frame.getContentPane().add(btnAfficherMonPortefeuilleClients);
 			
 	}

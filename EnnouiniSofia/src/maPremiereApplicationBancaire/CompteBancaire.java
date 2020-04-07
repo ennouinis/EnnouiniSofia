@@ -11,11 +11,12 @@ public class CompteBancaire {
 	private Client titulaireCompte ; 
 	private int numeroIBAN ; 
 	private double soldeBancaire, plafondDecouvert, retraitMaximum ; 
+	private double soldeCrediteur, soldeDebiteur; 
 	
 	public CompteBancaire (Client t, int numeroIBAN, double soldeBancaire, double plafondDecouvert, double retraitMaximum) throws IOException { 
 		this.titulaireCompte = t ;
 		this.numeroIBAN = numeroIBAN ;
-		this.soldeBancaire = soldeBancaire ; 
+		this.soldeBancaire = 0 ; 
 		this.plafondDecouvert = plafondDecouvert ; 
 		this.retraitMaximum = retraitMaximum ; 
 
@@ -37,6 +38,13 @@ public class CompteBancaire {
 	
 	public CompteBancaire () { 
 		
+	}
+	
+	public CompteBancaire (Client t, int numeroIBAN, double plafondDecouvert, double retraitMaximum) { 
+		this.titulaireCompte = t ;
+		this.numeroIBAN = numeroIBAN ;
+		this.plafondDecouvert = plafondDecouvert ; 
+		this.retraitMaximum = retraitMaximum ; 
 	}
 	
 	public Client getTitulaireCompte() {
@@ -74,13 +82,31 @@ public class CompteBancaire {
 	public double getRetraitMaximum() {
 		return retraitMaximum;
 	}
+	
+	public double getSoldeCrediteur() {
+		return soldeCrediteur;
+	}
+
+	public void setSoldeCrediteur(double soldeCrediteur) {
+		this.soldeCrediteur = soldeCrediteur;
+	}
+
+	public double getSoldeDebiteur() {
+		return soldeDebiteur;
+	}
+
+	public void setSoldeDebiteur(double soldeDebiteur) {
+		this.soldeDebiteur = soldeDebiteur;
+	}
 
 	public void setRetraitMaximum(double retraitMaximum) {
 		this.retraitMaximum = retraitMaximum;
 	}
 
 	public void verserArgent (double montantVersement) { 
-	soldeBancaire = soldeBancaire + montantVersement; 
+	soldeBancaire = soldeBancaire + montantVersement; {
+		System.out.println("Versement effectué avec succès. Votre nouveau solde est de : " + soldeBancaire + " euros.");
+	}
 	}
 	
     public void retirerArgent (double montantRetrait){
@@ -110,6 +136,14 @@ public class CompteBancaire {
             return 0;
         }
     	    
+    }
+    
+    public void reinitiliserSolde() {
+   	 
+		if (soldeBancaire>0) 
+    	 {soldeCrediteur = soldeBancaire; soldeDebiteur = 0;}
+    	 else
+    	 {soldeDebiteur = -soldeBancaire; soldeCrediteur = 0;}
     }
        
     }
