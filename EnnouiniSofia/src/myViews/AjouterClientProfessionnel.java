@@ -49,9 +49,7 @@ public class AjouterClientProfessionnel {
 
 		  frame.setSize(1000, 700);
 		  frame.setLocationRelativeTo(null);
-
-		
-		  frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		  //frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		  frame.getContentPane().setLayout(null);
 		  frame.setVisible(true);
 		
