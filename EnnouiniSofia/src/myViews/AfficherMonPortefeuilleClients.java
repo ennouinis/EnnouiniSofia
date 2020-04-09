@@ -32,8 +32,12 @@ public class AfficherMonPortefeuilleClients {
 
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 450, 300);
-		//frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setTitle("BANQUE ANNECIENNE");
+		  frame.setSize(1000, 700);
+		  frame.setLocationRelativeTo(null);
+		 //frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		  frame.getContentPane().setLayout(null);
+		  frame.setVisible(true);
 	}
 
 }
