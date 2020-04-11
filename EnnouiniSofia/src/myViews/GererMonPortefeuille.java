@@ -80,18 +80,5 @@ public class GererMonPortefeuille {
 			lblGestionDeProtefeuille.setBounds(276, 82, 213, 14);
 			frame.getContentPane().add(lblGestionDeProtefeuille);
 			
-			JButton btnAfficherMonPortefeuilleClients = new JButton("Afficher mon portefeuille clients");
-			btnAfficherMonPortefeuilleClients.addActionListener(new ActionListener() {
-				public void actionPerformed(ActionEvent e) {
-					
-					
-					
-				}
-			});
-			btnAfficherMonPortefeuilleClients.setForeground(SystemColor.textHighlight);
-			btnAfficherMonPortefeuilleClients.setFont(new Font("Tahoma", Font.BOLD, 13));
-			btnAfficherMonPortefeuilleClients.setBounds(253, 250, 266, 36);
-			frame.getContentPane().add(btnAfficherMonPortefeuilleClients);
-			
 	}
 }

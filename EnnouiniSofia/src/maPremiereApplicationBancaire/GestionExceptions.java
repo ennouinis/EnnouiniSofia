@@ -6,8 +6,8 @@ public class GestionExceptions extends Exception {
 		super ();
 	}
 	
-	public GestionExceptions (String cb) {
-		super (cb); 
+	public GestionExceptions (String cpart) {
+		super (cpart); 
 	}
 	
 
