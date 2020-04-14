@@ -31,13 +31,14 @@ public class MonApplicationBancaireFonctionne {
 			cb2.retirerArgent(2000);
 			
 			System.out.println(cb2.toString());
+			System.out.println(cb2.montantDecouvert());
 			
 			
 			System.out.print ("\n");
 			
-			agence1.afficherPortfeuille();
+			//agence1.afficherPortfeuille();
 			
-			new GererMonPortefeuille(); 
+			//new GererMonPortefeuille(); 
 			
 		}
 

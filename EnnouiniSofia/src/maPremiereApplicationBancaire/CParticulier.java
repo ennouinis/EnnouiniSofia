@@ -11,7 +11,7 @@ public class CParticulier extends Client {
 	    private String profession ; 
 	    private int age ;
 
-		public int nni() {
+		public int getNni() {
 			return nni;
 		}
 

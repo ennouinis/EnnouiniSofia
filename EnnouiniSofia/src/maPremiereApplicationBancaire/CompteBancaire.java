@@ -81,25 +81,25 @@ public class CompteBancaire {
 		return retraitMaximum;
 	}
 	
+	public void setRetraitMaximum(double retraitMaximum) {
+		this.retraitMaximum = retraitMaximum;
+	}
+	
 	public double getSoldeCrediteur() {
 		return soldeCrediteur;
 	}
 
-	public void setSoldeCrediteur(double soldeCrediteur) {
+	/*public void setSoldeCrediteur(double soldeCrediteur) {
 		this.soldeCrediteur = soldeCrediteur;
-	}
+	}*/
 
 	public double getSoldeDebiteur() {
 		return soldeDebiteur;
 	}
 
-	public void setSoldeDebiteur(double soldeDebiteur) {
+	/*public void setSoldeDebiteur(double soldeDebiteur) {
 		this.soldeDebiteur = soldeDebiteur;
-	}
-
-	public void setRetraitMaximum(double retraitMaximum) {
-		this.retraitMaximum = retraitMaximum;
-	}
+	}*/
 
 	public void verserArgent (double montantVersement) { 
 	soldeBancaire = soldeBancaire + montantVersement; {
