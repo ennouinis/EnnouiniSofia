@@ -141,7 +141,7 @@ public class CompteBancaire {
 		if (soldeBancaire>0) 
     	 {soldeCrediteur = soldeBancaire; soldeDebiteur = 0;}
     	 else
-    	 {soldeDebiteur = -soldeBancaire; soldeCrediteur = 0;}
+    	 {soldeDebiteur = soldeBancaire; soldeCrediteur = 0;}
     }
        
     }

@@ -16,7 +16,8 @@ public class MonApplicationBancaireFonctionne {
 			cb1.verserArgent(1000);	
 			cb1.retirerArgent(550);
 			cb1.retirerArgent(500);
-
+			
+			
 			System.out.println(cb1.toString());
 			System.out.println(cb1.montantDecouvert());
 			
@@ -36,7 +37,7 @@ public class MonApplicationBancaireFonctionne {
 			
 			System.out.print ("\n");
 			
-			//agence1.afficherPortfeuille();
+			agence1.afficherPortfeuille();
 			
 			//new GererMonPortefeuille(); 
 			

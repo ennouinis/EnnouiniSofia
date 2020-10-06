@@ -4,11 +4,9 @@ public class CompteBancaireFacade {
 
 	    private int numeroIBAN;
 	    private int codeSecurite;
-
 	    VerificationIBAN verifIBAN;
 	    VerificationCode verifCode;
 	    VerificationSolde verifSolde;
-
 	    BanqueAnnecienne banqueAnnecienne;
 
 	    public CompteBancaireFacade (int numeroIBAN, int codeSecurite){
@@ -23,9 +21,13 @@ public class CompteBancaireFacade {
 
 	    }
 
-	    public int getNumeroIBAN() { return numeroIBAN; }
+	    public int getNumeroIBAN() { 
+	    	return numeroIBAN; 
+	    	}
 
-	    public int getCodeSecurite() { return codeSecurite; }
+	    public int getCodeSecurite() { 
+	    	return codeSecurite; 
+	    	}
 
 	    public void retirerArgent(double montantRetrait){
 	    			if(verifIBAN.compteActif(getNumeroIBAN()) &&

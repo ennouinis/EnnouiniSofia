@@ -10,9 +10,9 @@ public class CompteBancaireTest {
 	CompteBancaire cb1 = new CompteBancaire (); 
 	cb1.verserArgent(1000);
 	cb1.retirerArgent(500);
-	cb1.reinitiliserSolde(); // Rajouté 
+	cb1.reinitiliserSolde(); // Rajoutée 
 
-	Assert.assertEquals(0, cb1.getSoldeDebiteur(), 500);
+	Assert.assertEquals(500, cb1.getSoldeDebiteur(), 500);
 	}
 
 @Test 
@@ -21,7 +21,7 @@ public class CompteBancaireTest {
 	CompteBancaire cb1 = new CompteBancaire(); 
 	cb1.verserArgent(1000.0);
 	cb1.reinitiliserSolde();
-	Assert.assertEquals(1000, cb1.getSoldeCrediteur(), 0);
+	Assert.assertEquals(1000, cb1.getSoldeCrediteur(), 1000);
 	}
 		 
 @Test 

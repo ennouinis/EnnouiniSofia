@@ -5,11 +5,17 @@ public class VerificationSolde {
 
 		    private double soldeBancaire = 900.00;
 
-		    public double getSoldeBancaire() { return soldeBancaire; }
+		    public double getSoldeBancaire() { 
+		    	return soldeBancaire; 
+		    	}
 
-		    public void retirerArgent(double montantRetrait) { soldeBancaire -= montantRetrait; }
+		    public void retirerArgent(double montantRetrait) { 
+		    	soldeBancaire -= montantRetrait; 
+		    	}
 
-		    public void verserArgent(double montantVersement) { soldeBancaire += montantVersement; }
+		    public void verserArgent(double montantVersement) { 
+		    	soldeBancaire += montantVersement; 
+		    	}
 
 		    public boolean soldeSuffisant(double montantRetrait) {
 
